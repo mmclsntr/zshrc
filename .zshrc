@@ -3,4 +3,6 @@ alias ll='ls -al'
 
 export PATH="/usr/local/bin:$PATH"
 
-eval "$(anyenv init -)"
+if type anyenv > /dev/null; then
+    eval "$(anyenv init -)"
+fi
